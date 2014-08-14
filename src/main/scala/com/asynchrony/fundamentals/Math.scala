@@ -9,7 +9,8 @@ class RandomDieRoller {
 
 object Math {
   def main(args: Array[String]) {
-    println("Hello, world!")
+    println("Rolling 2 dice 12 times...")
+    println(diceThrowsDistribution(12))
   }
 
 
