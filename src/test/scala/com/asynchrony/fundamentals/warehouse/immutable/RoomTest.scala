@@ -1,7 +1,7 @@
-package com.asynchrony.fundamentals.warehouse
+package com.asynchrony.fundamentals.warehouse.immutable
 
-import org.scalatest.{DiagrammedAssertions, Matchers, FunSpec}
-import DiagrammedAssertions._
+import com.asynchrony.fundamentals.warehouse.Room
+import org.scalatest.{DiagrammedAssertions, FunSpec, Matchers}
 
 class RoomTest extends FunSpec with Matchers{
   it("can hold boxes") {

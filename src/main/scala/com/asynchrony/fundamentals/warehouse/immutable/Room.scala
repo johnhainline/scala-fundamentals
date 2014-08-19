@@ -1,4 +1,4 @@
-package com.asynchrony.fundamentals.warehouse
+package com.asynchrony.fundamentals.warehouse.immutable
 
 case class Room(volume: Int, boxes:Seq[Box] = Seq()) {
   val usedVolume = boxes.map(_.volume).sum
