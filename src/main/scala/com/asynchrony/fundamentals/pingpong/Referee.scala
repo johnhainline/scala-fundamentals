@@ -19,6 +19,10 @@ class Referee extends Actor with ActorLogging {
 
     case StatusRequest =>
       sender() ! RefereeStatus(availablePlayers, activeGames)
+
+    case Depart(name) =>
+      availablePlayers = ActivePlayer(name, sender()) :: availablePlayers
+      activeGames = activeGames.filterNot(activeGame => activeGame.p1.name == name || activeGame.p2.name == name)
   }
 }
 

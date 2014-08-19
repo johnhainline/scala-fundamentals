@@ -20,6 +20,7 @@ class Player(referee: ActorRef, name: String) extends Actor with ActorLogging{
 }
 
 case class Join(name: String)
+case class Depart(name: String)
 case class Game(opponent: ActivePlayer)
 case class Ping()
 case class Pong()
